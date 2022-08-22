@@ -1,7 +1,22 @@
 body {
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.201);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 h1 {
     text-decoration: underline;
+    position: relative;
+    right: -470;
+    bottom: -50;
+}
+
+p {
+    position: relative;
+    right: -650;
+    bottom: -480;
+}
+
+img {
+    position: relative;
+    right: -450;
 }
