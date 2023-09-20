@@ -1,12 +1,32 @@
 @startuml
 
+left to right direction
 :Admin Bruker: as Admin
 :Normal Bruker: as Bruker
 
-Admin --> (Og)
-Admin --> (Ho)
+Admin --> (administrere brukere)
+(administrere brukere) --> (brukerlog)
+(administrere brukere) --> (tilkoblede enheter)
 
-Bruker --> (Ho)
-Bruker --> (xD)
+Admin --> (betalings tjeneste)
+(betalings tjeneste) --> (ordre liste)
+
+
+
+(Forside innhold) --> (Avspilling av videofremvisning)
+Bruker --> (Forside innhold)
+
+Bruker --> (søk / filter)
+
+
+Bruker --> (Rediger profil)
+(Rediger profil) --> (legg til bruker)
+(Rediger profil) --> (slett en bruker)
+(Rediger profil) --> (endre navn / bilde)
+
+(søk / filter) --> (Serie / film)
+(Avspilling av videofremvisning) --> (Serie / film)
+
+
 
 @enduml
