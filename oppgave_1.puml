@@ -15,18 +15,18 @@ Admin --> (betalings tjeneste)
 
 (Forside innhold) --> (Avspilling av videofremvisning)
 Bruker --> (Forside innhold)
-
 Bruker --> (søk / filter)
-
-
 Bruker --> (Rediger profil)
 (Rediger profil) --> (legg til bruker)
 (Rediger profil) --> (slett en bruker)
-(Rediger profil) --> (endre navn / bilde)
-
+(Rediger profil) --> (profil redigering)
 (søk / filter) --> (Serie / film)
 (Avspilling av videofremvisning) --> (Serie / film)
 
+Bruker --> (Betaling av abonnoment)
+(Betaling av abonnoment) --> (vipps)
+(Betaling av abonnoment) --> (visa)
+(Betaling av abonnoment) --> (mastercard)
 
 
 @enduml
