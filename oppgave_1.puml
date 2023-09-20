@@ -1,0 +1,12 @@
+@startuml
+
+:Admin Bruker: as Admin
+:Normal Bruker: as Bruker
+
+Admin --> (Og)
+Admin --> (Ho)
+
+Bruker --> (Ho)
+Bruker --> (xD)
+
+@enduml
