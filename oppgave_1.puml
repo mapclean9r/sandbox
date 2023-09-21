@@ -12,6 +12,8 @@ Admin --> (betalings tjeneste)
 (betalings tjeneste) --> (ordre liste)
 
 
+Admin --> (Logg inn)
+Bruker --> (Logg inn)
 
 (Forside innhold) --> (Avspilling av videofremvisning)
 Bruker --> (Forside innhold)

@@ -1,0 +1,49 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor Brukerkonto
+
+'Fra Bruker
+Brukerkonto -> Frontend: Betalingsvalg
+activate Frontend
+Frontend -> backend: Betaling
+activate backend
+
+backend -> API: Prosesserer
+        activate API
+
+API ->  Banken: Validering
+activate Banken
+
+Banken --> API: Betalings utfall
+deactivate Banken
+
+alt Godkjent
+    API --> backend: BetalingsData
+    backend --> Frontend: Betaling godkjent
+    Frontend --> Brukerkonto: Tilgang
+    backend -> Netflix_Database : Register ordre
+
+else Ikke godkjent
+    API --> backend: Ikke godkjent
+    backend --> Frontend: Lager Feilmelding
+            deactivate backend
+
+    Frontend --> Brukerkonto: Gir Feilmelding
+
+
+        deactivate API
+
+
+end
+
+
+'Mot bruker
+
+Frontend --> Brukerkonto: Ordre Status
+deactivate Frontend
+
+
+
+@enduml
